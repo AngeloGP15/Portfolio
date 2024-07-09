@@ -24,6 +24,7 @@ jQuery.noConflict();
 })(jQuery);
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
+
 jQuery.noConflict();
 (function ($) {
     $(function () {
@@ -130,4 +131,6 @@ var today = new Date();
 var year = today.getFullYear();
 
 var copyright = document.getElementById("copyright");
-copyright.innerHTML = '© AngeloGP15 ' + year;
+if (copyright) {
+    copyright.innerHTML = '© AngeloGP15 ' + year;
+}
